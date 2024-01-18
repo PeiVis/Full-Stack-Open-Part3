@@ -5,3 +5,13 @@ content-type: application/json
     "name": "Arto Hellasfss",
     "number": "045 45 45 45 45" 
 }
+
+####
+
+POST https://full-stack-open-part3.fly.dev/api/persons HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Arto Hellasfss",
+    "number": "045 45 45 45 45" 
+}
