@@ -2,8 +2,18 @@ POST http://localhost:3001/api/persons HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Arto Hellasfss",
-    "number": "045 45 45 45 45" 
+    "name": "tasdsad",
+    "number": "000-000000"
+}
+
+####
+
+PUT http://localhost:3001/api/persons/65acba70f49eb0690fb2cfee HTTP/1.1
+content-type: application/json
+
+{
+    "name": "as",
+    "number": "0345354345345345354" 
 }
 
 ####

@@ -1,3 +1,4 @@
+/*
 const mongoose = require('mongoose')
 
 if (process.argv.length < 3) {
@@ -13,8 +14,15 @@ mongoose.set('strictQuery', false)
 mongoose.connect(url)
 
 const phonebookSchema = new mongoose.Schema({
-  name: String,
-  number: Number
+  name: {
+    type: String,
+    minLength: 5,
+    required: true
+  },
+  number: {
+    type: Number,
+    required: true
+  }
 })
 
 const Contact = mongoose.model('Contact', phonebookSchema)
@@ -37,3 +45,4 @@ if (process.argv[3]) {
     mongoose.connection.close()
   })
 }
+*/
